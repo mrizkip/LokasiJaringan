@@ -74,7 +74,7 @@ public class SINRActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // get Kml File from asset folder
         try {
-            InputStream inputStream = assetManager.open("sinr_malang_online.kml");
+            InputStream inputStream = assetManager.open("SINR_v2.kml");
             KmlLayer layer = new KmlLayer(mMap, inputStream, SINRActivity.this);
             layer.addLayerToMap();
             Log.d(TAG, "onMapReady: map loaded");

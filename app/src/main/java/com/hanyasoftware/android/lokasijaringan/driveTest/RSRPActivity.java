@@ -74,7 +74,7 @@ public class RSRPActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // get Kml File from asset folder
         try {
-            InputStream inputStream = assetManager.open("rsrp_malang.kml");
+            InputStream inputStream = assetManager.open("RSRP_v2.kml");
             KmlLayer layer = new KmlLayer(mMap, inputStream, RSRPActivity.this);
             layer.addLayerToMap();
         } catch (IOException e) {
