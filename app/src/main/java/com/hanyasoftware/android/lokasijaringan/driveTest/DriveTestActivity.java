@@ -43,7 +43,10 @@ public class DriveTestActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
+        cardSinr.setOnClickListener(v -> {
+            Intent intent = new Intent(DriveTestActivity.this, SINRActivity.class);
+            startActivity(intent);
+        });
 
     }
 

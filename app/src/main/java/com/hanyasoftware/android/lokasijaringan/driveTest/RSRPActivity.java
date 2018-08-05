@@ -53,7 +53,7 @@ public class RSRPActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (toolbar != null) setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             actionBar = getSupportActionBar();
-            actionBar.setTitle("Drive Test");
+            actionBar.setTitle("RSRP");
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
     }
