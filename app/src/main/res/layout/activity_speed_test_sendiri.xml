@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".telkomsel.speedTest.SpeedTestActivity">
+    tools:context=".jamTertentu.speedTest.SpeedTestSendiriActivity">
 
     <include
-        android:id="@+id/speedTest_toolbar"
+        android:id="@+id/speedTestSendiri_toolbar"
         layout="@layout/view_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <fragment
-        android:id="@+id/mapSpeedTest"
+        android:id="@+id/mapSpeedTestSendiri"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/speedTest_toolbar"
+        android:layout_below="@id/speedTestSendiri_toolbar"
         />
-
+    
 </RelativeLayout>

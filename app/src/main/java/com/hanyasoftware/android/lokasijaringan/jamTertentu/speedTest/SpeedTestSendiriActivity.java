@@ -1,13 +1,13 @@
-package com.hanyasoftware.android.lokasijaringan.driveTest;
+package com.hanyasoftware.android.lokasijaringan.jamTertentu.speedTest;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -17,6 +17,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.data.kml.KmlLayer;
 import com.hanyasoftware.android.lokasijaringan.R;
+import com.hanyasoftware.android.lokasijaringan.telkomsel.speedTest.SpeedTestActivity;
 
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -26,26 +27,24 @@ import java.io.InputStream;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class SINRActivity extends AppCompatActivity implements OnMapReadyCallback {
-
-    private static final String TAG = "SINRActivity";
+public class SpeedTestSendiriActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
-    @BindView(R.id.sinr_toolbar)
+    @BindView(R.id.speedTestSendiri_toolbar)
     Toolbar toolbar;
-    android.support.v7.app.ActionBar actionBar;
+    ActionBar actionBar;
 
     AssetManager assetManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sinr);
+        setContentView(R.layout.activity_speed_test_sendiri);
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapSinr);
+                .findFragmentById(R.id.mapSpeedTestSendiri);
         mapFragment.getMapAsync(this);
 
         ButterKnife.bind(this);
@@ -54,30 +53,20 @@ public class SINRActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (toolbar != null) setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             actionBar = getSupportActionBar();
-            actionBar.setTitle("SINR");
+            actionBar.setTitle("Speed Test");
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
     }
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
         // get Kml File from asset folder
         try {
-            InputStream inputStream = assetManager.open("SINR_v2.kml");
-            KmlLayer layer = new KmlLayer(mMap, inputStream, SINRActivity.this);
+            InputStream inputStream = assetManager.open("ST_Data_Sendiri_Malang.kml");
+            KmlLayer layer = new KmlLayer(mMap, inputStream, SpeedTestSendiriActivity.this);
             layer.addLayerToMap();
-            Log.d(TAG, "onMapReady: map loaded");
         } catch (IOException e) {
             e.printStackTrace();
         } catch (XmlPullParserException e) {
@@ -85,9 +74,8 @@ public class SINRActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.953564, 112.610301);
-//        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10.0f));
+        LatLng malang = new LatLng(-7.953564, 112.610301);
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(malang, 10.0f));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -111,6 +99,4 @@ public class SINRActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
         return super.onOptionsItemSelected(item);
     }
-
-
 }

@@ -1,10 +1,9 @@
-package com.hanyasoftware.android.lokasijaringan.driveTest;
+package com.hanyasoftware.android.lokasijaringan.telkomsel.driveTest;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,9 +13,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.data.kml.KmlLayer;
 import com.hanyasoftware.android.lokasijaringan.R;
 
@@ -74,7 +71,7 @@ public class RSRPActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // get Kml File from asset folder
         try {
-            InputStream inputStream = assetManager.open("RSRP_v2.kml");
+            InputStream inputStream = assetManager.open("RSRP_TSEL_Malang.kml");
             KmlLayer layer = new KmlLayer(mMap, inputStream, RSRPActivity.this);
             layer.addLayerToMap();
         } catch (IOException e) {
@@ -84,9 +81,9 @@ public class RSRPActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.953564, 112.610301);
-//        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10.0f));
+        LatLng malang = new LatLng(-7.953564, 112.610301);
+//        mMap.addMarker(new MarkerOptions().position(malang).title("Marker in Malang"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(malang, 10.0f));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling

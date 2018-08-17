@@ -28,13 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".driveTest.DriveTestActivity" />
-        <activity android:name=".speedTest.SpeedTestActivity" />
-        <activity android:name=".utility.UtilityActivity" />
-        <activity android:name=".driveTest.SINRActivity" />
-        <activity android:name=".speedTest.DownloadActivity" />
-        <activity android:name=".speedTest.UploadActivity" />
-        <activity android:name=".speedTest.LatencyActivity" />
+        <activity android:name=".telkomsel.driveTest.DriveTestActivity" />
+        <activity android:name=".telkomsel.speedTest.SpeedTestActivity" />
+        <activity android:name=".telkomsel.utility.UtilityActivity" />
+        <activity android:name=".telkomsel.driveTest.SINRActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -48,8 +45,14 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".driveTest.RSRPActivity"
+            android:name=".telkomsel.driveTest.RSRPActivity"
             android:label="@string/title_activity_rsrp" />
+        <activity android:name=".TelkomselActivity" />
+        <activity android:name=".JamTertentuActivity" />
+        <activity android:name=".jamTertentu.driveTest.DriveTestSendiriActivity" />
+        <activity android:name=".jamTertentu.driveTest.RSRPSendiriActivity" />
+        <activity android:name=".jamTertentu.driveTest.SINRSendiriActivity" />
+        <activity android:name=".jamTertentu.speedTest.SpeedTestSendiriActivity"></activity>
     </application>
 
 </manifest>

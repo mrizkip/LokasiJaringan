@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomsheet_rsrp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <View
+        android:layout_width="48dp"
+        android:layout_height="8dp"
+        android:background="@drawable/bottomsheet_top"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keterangan"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryText"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="Indikator RSRP"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/primaryText"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Range RSRP"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primaryText"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/line_divider"
+            android:backgroundTint="@color/biruTua" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Baik Sekali"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/primaryText"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RSRP >= -92 dBm"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primaryText"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <!-- TODO: change background to drawable, not background tint -->
+        <View
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/line_divider"
+            android:backgroundTint="@color/hijau" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Baik"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/primaryText"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-92 dBm > RSRP >= -102 dBm"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primaryText"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/line_divider"
+            android:backgroundTint="@color/kuning" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Cukup"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/primaryText"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-102 dBm > RSRP >= -110 dBm"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primaryText"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/line_divider"
+            android:backgroundTint="@color/merah" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Kurang"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/primaryText"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-110 dBm > RSRP"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primaryText"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
