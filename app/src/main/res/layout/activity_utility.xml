@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".telkomsel.utility.UtilityActivity">
 
-    <include android:id="@+id/utility_toolbar"
-        layout="@layout/view_toolbar"
-        />
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:map="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+        <include
+            android:id="@+id/utility_toolbar"
+            layout="@layout/view_toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <fragment
         android:id="@+id/mapUtility"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/utility_toolbar"
-        />
+        android:layout_below="@id/utility_toolbar" />
 
-</RelativeLayout>
+    <include layout="@layout/bottomsheet_utility" />
+
+</android.support.design.widget.CoordinatorLayout>

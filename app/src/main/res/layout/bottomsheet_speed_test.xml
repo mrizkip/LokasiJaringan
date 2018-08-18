@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/bottomsheet_rsrp"
+    android:id="@+id/bottomsheet_speedTest"
     android:layout_width="match_parent"
     android:layout_height="340dp"
     android:background="@color/white"
@@ -52,7 +52,7 @@
             android:textColor="@color/primaryText" />
 
         <TextView
-            android:id="@+id/bottomsheet_rsrp_latitude"
+            android:id="@+id/bottomsheet_speedTest_latitude"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -75,7 +75,7 @@
             android:textColor="@color/primaryText" />
 
         <TextView
-            android:id="@+id/bottomsheet_rsrp_longitude"
+            android:id="@+id/bottomsheet_speedTest_longitude"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -123,11 +123,9 @@
         android:paddingRight="16dp">
 
         <TextView
-            android:layout_width="96dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:text="Indikator RSRP"
+            android:text="Indeks Speed Test"
             android:textColor="@color/primaryText"
             android:textStyle="bold" />
 
@@ -135,7 +133,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Range RSRP"
+            android:text="Range Speed Test"
             android:textColor="@color/primaryText"
             android:textStyle="bold" />
 
@@ -152,49 +150,20 @@
         <View
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:background="@drawable/grid_biru_tua" />
+            android:background="@drawable/grid_merah" />
 
         <TextView
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:text="Baik Sekali"
+            android:text="1"
             android:textColor="@color/primaryText" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="RSRP >= -92 dBm"
-            android:textColor="@color/primaryText" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp">
-
-        <View
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:background="@drawable/grid_hijau" />
-
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:text="Baik"
-            android:textColor="@color/primaryText" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="-92 dBm > RSRP >= -102 dBm"
+            android:text="Speed Test &lt; 1.5 Mbps"
             android:textColor="@color/primaryText" />
 
     </LinearLayout>
@@ -216,14 +185,14 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:text="Cukup"
+            android:text="2"
             android:textColor="@color/primaryText" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="-102 dBm > RSRP >= -110 dBm"
+            android:text="1.5 Mbps >= Speed Test &lt; 3 Mbps"
             android:textColor="@color/primaryText" />
 
     </LinearLayout>
@@ -239,20 +208,49 @@
         <View
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:background="@drawable/grid_merah" />
+            android:background="@drawable/grid_hijau" />
 
         <TextView
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:text="Kurang"
+            android:text="3"
             android:textColor="@color/primaryText" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="-110 dBm > RSRP"
+            android:text="3 Mbps >= Speed Test &lt; 5 Mbps"
+            android:textColor="@color/primaryText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/grid_biru_tua" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="4"
+            android:textColor="@color/primaryText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Speed Test >= 5 Mbps"
             android:textColor="@color/primaryText" />
 
     </LinearLayout>

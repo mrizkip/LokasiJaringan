@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>ST_TSEL_Malang.kml</name>
-	<Schema name="ST_Index_4" id="S_ST_Index_4_IIDDDDSSSSSIISISDDDSSSSIIIDDDSSSSIIIDDDDDSIIIDDDI">
+	<Schema name="ST_Index_2" id="S_ST_Index_2_IIDDDDSSSSSIISISDDDSSSSIIIDDDSSSSIIIDDDDDSIIIDDDD">
 		<SimpleField type="int" name="GridID"><displayName>&lt;b&gt;GridID&lt;/b&gt;</displayName>
 </SimpleField>
 		<SimpleField type="int" name="GridSize"><displayName>&lt;b&gt;GridSize&lt;/b&gt;</displayName>
@@ -99,7 +99,7 @@
 </SimpleField>
 		<SimpleField type="double" name="__Lat"><displayName>&lt;b&gt;__Lat&lt;/b&gt;</displayName>
 </SimpleField>
-		<SimpleField type="int" name="Index_Total"><displayName>&lt;b&gt;Index_Total&lt;/b&gt;</displayName>
+		<SimpleField type="double" name="Index_Total"><displayName>&lt;b&gt;Index_Total&lt;/b&gt;</displayName>
 </SimpleField>
 	</Schema>
 	<Schema name="ST_Index_1" id="S_ST_Index_1_IIDDDDSSSSSIISISDDDSSSSIIIDDDSSSSIIIDDIIISIIIDDDD">
@@ -302,7 +302,7 @@
 		<SimpleField type="double" name="Index_Total"><displayName>&lt;b&gt;Index_Total&lt;/b&gt;</displayName>
 </SimpleField>
 	</Schema>
-	<Schema name="ST_Index_2" id="S_ST_Index_2_IIDDDDSSSSSIISISDDDSSSSIIIDDDSSSSIIIDDDDDSIIIDDDD">
+	<Schema name="ST_Index_4" id="S_ST_Index_4_IIDDDDSSSSSIISISDDDSSSSIIIDDDSSSSIIIDDDDDSIIIDDDI">
 		<SimpleField type="int" name="GridID"><displayName>&lt;b&gt;GridID&lt;/b&gt;</displayName>
 </SimpleField>
 		<SimpleField type="int" name="GridSize"><displayName>&lt;b&gt;GridSize&lt;/b&gt;</displayName>
@@ -399,377 +399,9 @@
 </SimpleField>
 		<SimpleField type="double" name="__Lat"><displayName>&lt;b&gt;__Lat&lt;/b&gt;</displayName>
 </SimpleField>
-		<SimpleField type="double" name="Index_Total"><displayName>&lt;b&gt;Index_Total&lt;/b&gt;</displayName>
+		<SimpleField type="int" name="Index_Total"><displayName>&lt;b&gt;Index_Total&lt;/b&gt;</displayName>
 </SimpleField>
 	</Schema>
-	<StyleMap id="falseColor3">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#falseColor4</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#falseColor2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="poly-FFAA7F-1000-0-nodesc">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-FFAA7F-1000-0-nodesc-normal</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-FFAA7F-1000-0-nodesc-highlight</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="falseColor2">
-		<BalloonStyle>
-			<text><![CDATA[<table border="0">
-  <tr><td><b>GridID</b></td><td>$[ST_Index_2/GridID]</td></tr>
-  <tr><td><b>GridSize</b></td><td>$[ST_Index_2/GridSize]</td></tr>
-  <tr><td><b>GridRefx</b></td><td>$[ST_Index_2/GridRefx]</td></tr>
-  <tr><td><b>GridRefy</b></td><td>$[ST_Index_2/GridRefy]</td></tr>
-  <tr><td><b>Longitude</b></td><td>$[ST_Index_2/Longitude]</td></tr>
-  <tr><td><b>Latitude</b></td><td>$[ST_Index_2/Latitude]</td></tr>
-  <tr><td><b>REGION</b></td><td>$[ST_Index_2/REGION]</td></tr>
-  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_2/KABUPATEN]</td></tr>
-  <tr><td><b>Downlink</b></td><td>$[ST_Index_2/Downlink]</td></tr>
-  <tr><td><b>Uplink</b></td><td>$[ST_Index_2/Uplink]</td></tr>
-  <tr><td><b>Latency</b></td><td>$[ST_Index_2/Latency]</td></tr>
-  <tr><td><b>POI_Check</b></td><td>$[ST_Index_2/POI_Check]</td></tr>
-  <tr><td><b>Num_POI</b></td><td>$[ST_Index_2/Num_POI]</td></tr>
-  <tr><td><b>POI_Name</b></td><td>$[ST_Index_2/POI_Name]</td></tr>
-  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_2/DTRoute_Check]</td></tr>
-  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_2/DTRoute_Name]</td></tr>
-  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_2/ookla_4g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_2/ookla_4g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_2/ookla_4g_latency]</td></tr>
-  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_2/ookla_4g_dl_winner]</td></tr>
-  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_2/ookla_4g_ul_winner]</td></tr>
-  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_2/ookla_4g_lat_winner]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_2/ookla_4g_tsel_win]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_lat]</td></tr>
-  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_2/ookla_3g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_2/ookla_3g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_2/ookla_3g_latency]</td></tr>
-  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_2/ookla_3g_dl_winner]</td></tr>
-  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_2/ookla_3g_ul_winner]</td></tr>
-  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_2/ookla_3g_lat_winner]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_2/ookla_3g_tsel_win]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_lat]</td></tr>
-  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_2/Longitude_2]</td></tr>
-  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_2/Latitude_2]</td></tr>
-  <tr><td><b>Download</b></td><td>$[ST_Index_2/Download]</td></tr>
-  <tr><td><b>Upload</b></td><td>$[ST_Index_2/Upload]</td></tr>
-  <tr><td><b>Latency_2</b></td><td>$[ST_Index_2/Latency_2]</td></tr>
-  <tr><td><b>Operator</b></td><td>$[ST_Index_2/Operator]</td></tr>
-  <tr><td><b>Index_DL</b></td><td>$[ST_Index_2/Index_DL]</td></tr>
-  <tr><td><b>Index_UL</b></td><td>$[ST_Index_2/Index_UL]</td></tr>
-  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_2/Index_Lat]</td></tr>
-  <tr><td><b>__DL</b></td><td>$[ST_Index_2/__DL]</td></tr>
-  <tr><td><b>__UL</b></td><td>$[ST_Index_2/__UL]</td></tr>
-  <tr><td><b>__Lat</b></td><td>$[ST_Index_2/__Lat]</td></tr>
-  <tr><td><b>Index_Total</b></td><td>$[ST_Index_2/Index_Total]</td></tr>
-</table>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>4d000000</color>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d00aa00</color>
-		</PolyStyle>
-	</Style>
-	<Style id="poly-FFAA7F-1000-0-nodesc-normal">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff7faaff</color>
-		</LineStyle>
-		<PolyStyle>
-			<color>007faaff</color>
-		</PolyStyle>
-	</Style>
-	<Style id="falseColor5">
-		<BalloonStyle>
-			<text><![CDATA[<table border="0">
-  <tr><td><b>GridID</b></td><td>$[ST_Index_3/GridID]</td></tr>
-  <tr><td><b>GridSize</b></td><td>$[ST_Index_3/GridSize]</td></tr>
-  <tr><td><b>GridRefx</b></td><td>$[ST_Index_3/GridRefx]</td></tr>
-  <tr><td><b>GridRefy</b></td><td>$[ST_Index_3/GridRefy]</td></tr>
-  <tr><td><b>Longitude</b></td><td>$[ST_Index_3/Longitude]</td></tr>
-  <tr><td><b>Latitude</b></td><td>$[ST_Index_3/Latitude]</td></tr>
-  <tr><td><b>REGION</b></td><td>$[ST_Index_3/REGION]</td></tr>
-  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_3/KABUPATEN]</td></tr>
-  <tr><td><b>Downlink</b></td><td>$[ST_Index_3/Downlink]</td></tr>
-  <tr><td><b>Uplink</b></td><td>$[ST_Index_3/Uplink]</td></tr>
-  <tr><td><b>Latency</b></td><td>$[ST_Index_3/Latency]</td></tr>
-  <tr><td><b>POI_Check</b></td><td>$[ST_Index_3/POI_Check]</td></tr>
-  <tr><td><b>Num_POI</b></td><td>$[ST_Index_3/Num_POI]</td></tr>
-  <tr><td><b>POI_Name</b></td><td>$[ST_Index_3/POI_Name]</td></tr>
-  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_3/DTRoute_Check]</td></tr>
-  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_3/DTRoute_Name]</td></tr>
-  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_3/ookla_4g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_3/ookla_4g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_3/ookla_4g_latency]</td></tr>
-  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_3/ookla_4g_dl_winner]</td></tr>
-  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_3/ookla_4g_ul_winner]</td></tr>
-  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_3/ookla_4g_lat_winner]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_3/ookla_4g_tsel_win]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_3/ookla_4g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_3/ookla_4g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_3/ookla_4g_tsel_win_lat]</td></tr>
-  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_3/ookla_3g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_3/ookla_3g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_3/ookla_3g_latency]</td></tr>
-  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_3/ookla_3g_dl_winner]</td></tr>
-  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_3/ookla_3g_ul_winner]</td></tr>
-  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_3/ookla_3g_lat_winner]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_3/ookla_3g_tsel_win]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_3/ookla_3g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_3/ookla_3g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_3/ookla_3g_tsel_win_lat]</td></tr>
-  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_3/Longitude_2]</td></tr>
-  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_3/Latitude_2]</td></tr>
-  <tr><td><b>Download</b></td><td>$[ST_Index_3/Download]</td></tr>
-  <tr><td><b>Upload</b></td><td>$[ST_Index_3/Upload]</td></tr>
-  <tr><td><b>Latency_2</b></td><td>$[ST_Index_3/Latency_2]</td></tr>
-  <tr><td><b>Operator</b></td><td>$[ST_Index_3/Operator]</td></tr>
-  <tr><td><b>Index_DL</b></td><td>$[ST_Index_3/Index_DL]</td></tr>
-  <tr><td><b>Index_UL</b></td><td>$[ST_Index_3/Index_UL]</td></tr>
-  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_3/Index_Lat]</td></tr>
-  <tr><td><b>__DL</b></td><td>$[ST_Index_3/__DL]</td></tr>
-  <tr><td><b>__UL</b></td><td>$[ST_Index_3/__UL]</td></tr>
-  <tr><td><b>__Lat</b></td><td>$[ST_Index_3/__Lat]</td></tr>
-  <tr><td><b>Index_Total</b></td><td>$[ST_Index_3/Index_Total]</td></tr>
-</table>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>4d000000</color>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d00ffff</color>
-		</PolyStyle>
-	</Style>
-	<Style id="falseColor100">
-		<BalloonStyle>
-			<text><![CDATA[<table border="0">
-  <tr><td><b>GridID</b></td><td>$[ST_Index_4/GridID]</td></tr>
-  <tr><td><b>GridSize</b></td><td>$[ST_Index_4/GridSize]</td></tr>
-  <tr><td><b>GridRefx</b></td><td>$[ST_Index_4/GridRefx]</td></tr>
-  <tr><td><b>GridRefy</b></td><td>$[ST_Index_4/GridRefy]</td></tr>
-  <tr><td><b>Longitude</b></td><td>$[ST_Index_4/Longitude]</td></tr>
-  <tr><td><b>Latitude</b></td><td>$[ST_Index_4/Latitude]</td></tr>
-  <tr><td><b>REGION</b></td><td>$[ST_Index_4/REGION]</td></tr>
-  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_4/KABUPATEN]</td></tr>
-  <tr><td><b>Downlink</b></td><td>$[ST_Index_4/Downlink]</td></tr>
-  <tr><td><b>Uplink</b></td><td>$[ST_Index_4/Uplink]</td></tr>
-  <tr><td><b>Latency</b></td><td>$[ST_Index_4/Latency]</td></tr>
-  <tr><td><b>POI_Check</b></td><td>$[ST_Index_4/POI_Check]</td></tr>
-  <tr><td><b>Num_POI</b></td><td>$[ST_Index_4/Num_POI]</td></tr>
-  <tr><td><b>POI_Name</b></td><td>$[ST_Index_4/POI_Name]</td></tr>
-  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_4/DTRoute_Check]</td></tr>
-  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_4/DTRoute_Name]</td></tr>
-  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_4/ookla_4g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_4/ookla_4g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_4/ookla_4g_latency]</td></tr>
-  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_4/ookla_4g_dl_winner]</td></tr>
-  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_4/ookla_4g_ul_winner]</td></tr>
-  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_4/ookla_4g_lat_winner]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_4/ookla_4g_tsel_win]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_lat]</td></tr>
-  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_4/ookla_3g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_4/ookla_3g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_4/ookla_3g_latency]</td></tr>
-  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_4/ookla_3g_dl_winner]</td></tr>
-  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_4/ookla_3g_ul_winner]</td></tr>
-  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_4/ookla_3g_lat_winner]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_4/ookla_3g_tsel_win]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_lat]</td></tr>
-  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_4/Longitude_2]</td></tr>
-  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_4/Latitude_2]</td></tr>
-  <tr><td><b>Download</b></td><td>$[ST_Index_4/Download]</td></tr>
-  <tr><td><b>Upload</b></td><td>$[ST_Index_4/Upload]</td></tr>
-  <tr><td><b>Latency_2</b></td><td>$[ST_Index_4/Latency_2]</td></tr>
-  <tr><td><b>Operator</b></td><td>$[ST_Index_4/Operator]</td></tr>
-  <tr><td><b>Index_DL</b></td><td>$[ST_Index_4/Index_DL]</td></tr>
-  <tr><td><b>Index_UL</b></td><td>$[ST_Index_4/Index_UL]</td></tr>
-  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_4/Index_Lat]</td></tr>
-  <tr><td><b>__DL</b></td><td>$[ST_Index_4/__DL]</td></tr>
-  <tr><td><b>__UL</b></td><td>$[ST_Index_4/__UL]</td></tr>
-  <tr><td><b>__Lat</b></td><td>$[ST_Index_4/__Lat]</td></tr>
-  <tr><td><b>Index_Total</b></td><td>$[ST_Index_4/Index_Total]</td></tr>
-</table>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>4d000000</color>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d0000ff</color>
-		</PolyStyle>
-	</Style>
-	<Style id="falseColor9">
-		<BalloonStyle>
-			<text><![CDATA[<table border="0">
-  <tr><td><b>GridID</b></td><td>$[ST_Index_4/GridID]</td></tr>
-  <tr><td><b>GridSize</b></td><td>$[ST_Index_4/GridSize]</td></tr>
-  <tr><td><b>GridRefx</b></td><td>$[ST_Index_4/GridRefx]</td></tr>
-  <tr><td><b>GridRefy</b></td><td>$[ST_Index_4/GridRefy]</td></tr>
-  <tr><td><b>Longitude</b></td><td>$[ST_Index_4/Longitude]</td></tr>
-  <tr><td><b>Latitude</b></td><td>$[ST_Index_4/Latitude]</td></tr>
-  <tr><td><b>REGION</b></td><td>$[ST_Index_4/REGION]</td></tr>
-  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_4/KABUPATEN]</td></tr>
-  <tr><td><b>Downlink</b></td><td>$[ST_Index_4/Downlink]</td></tr>
-  <tr><td><b>Uplink</b></td><td>$[ST_Index_4/Uplink]</td></tr>
-  <tr><td><b>Latency</b></td><td>$[ST_Index_4/Latency]</td></tr>
-  <tr><td><b>POI_Check</b></td><td>$[ST_Index_4/POI_Check]</td></tr>
-  <tr><td><b>Num_POI</b></td><td>$[ST_Index_4/Num_POI]</td></tr>
-  <tr><td><b>POI_Name</b></td><td>$[ST_Index_4/POI_Name]</td></tr>
-  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_4/DTRoute_Check]</td></tr>
-  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_4/DTRoute_Name]</td></tr>
-  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_4/ookla_4g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_4/ookla_4g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_4/ookla_4g_latency]</td></tr>
-  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_4/ookla_4g_dl_winner]</td></tr>
-  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_4/ookla_4g_ul_winner]</td></tr>
-  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_4/ookla_4g_lat_winner]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_4/ookla_4g_tsel_win]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_lat]</td></tr>
-  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_4/ookla_3g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_4/ookla_3g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_4/ookla_3g_latency]</td></tr>
-  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_4/ookla_3g_dl_winner]</td></tr>
-  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_4/ookla_3g_ul_winner]</td></tr>
-  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_4/ookla_3g_lat_winner]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_4/ookla_3g_tsel_win]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_lat]</td></tr>
-  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_4/Longitude_2]</td></tr>
-  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_4/Latitude_2]</td></tr>
-  <tr><td><b>Download</b></td><td>$[ST_Index_4/Download]</td></tr>
-  <tr><td><b>Upload</b></td><td>$[ST_Index_4/Upload]</td></tr>
-  <tr><td><b>Latency_2</b></td><td>$[ST_Index_4/Latency_2]</td></tr>
-  <tr><td><b>Operator</b></td><td>$[ST_Index_4/Operator]</td></tr>
-  <tr><td><b>Index_DL</b></td><td>$[ST_Index_4/Index_DL]</td></tr>
-  <tr><td><b>Index_UL</b></td><td>$[ST_Index_4/Index_UL]</td></tr>
-  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_4/Index_Lat]</td></tr>
-  <tr><td><b>__DL</b></td><td>$[ST_Index_4/__DL]</td></tr>
-  <tr><td><b>__UL</b></td><td>$[ST_Index_4/__UL]</td></tr>
-  <tr><td><b>__Lat</b></td><td>$[ST_Index_4/__Lat]</td></tr>
-  <tr><td><b>Index_Total</b></td><td>$[ST_Index_4/Index_Total]</td></tr>
-</table>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>4d000000</color>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d0000ff</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="falseColor8">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#falseColor100</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#falseColor9</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="poly-FFAA7F-1000-0-nodesc-highlight">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff7faaff</color>
-			<width>1.5</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>007faaff</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="falseColor0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#falseColor1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#falseColor</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="falseColor4">
-		<BalloonStyle>
-			<text><![CDATA[<table border="0">
-  <tr><td><b>GridID</b></td><td>$[ST_Index_2/GridID]</td></tr>
-  <tr><td><b>GridSize</b></td><td>$[ST_Index_2/GridSize]</td></tr>
-  <tr><td><b>GridRefx</b></td><td>$[ST_Index_2/GridRefx]</td></tr>
-  <tr><td><b>GridRefy</b></td><td>$[ST_Index_2/GridRefy]</td></tr>
-  <tr><td><b>Longitude</b></td><td>$[ST_Index_2/Longitude]</td></tr>
-  <tr><td><b>Latitude</b></td><td>$[ST_Index_2/Latitude]</td></tr>
-  <tr><td><b>REGION</b></td><td>$[ST_Index_2/REGION]</td></tr>
-  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_2/KABUPATEN]</td></tr>
-  <tr><td><b>Downlink</b></td><td>$[ST_Index_2/Downlink]</td></tr>
-  <tr><td><b>Uplink</b></td><td>$[ST_Index_2/Uplink]</td></tr>
-  <tr><td><b>Latency</b></td><td>$[ST_Index_2/Latency]</td></tr>
-  <tr><td><b>POI_Check</b></td><td>$[ST_Index_2/POI_Check]</td></tr>
-  <tr><td><b>Num_POI</b></td><td>$[ST_Index_2/Num_POI]</td></tr>
-  <tr><td><b>POI_Name</b></td><td>$[ST_Index_2/POI_Name]</td></tr>
-  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_2/DTRoute_Check]</td></tr>
-  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_2/DTRoute_Name]</td></tr>
-  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_2/ookla_4g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_2/ookla_4g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_2/ookla_4g_latency]</td></tr>
-  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_2/ookla_4g_dl_winner]</td></tr>
-  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_2/ookla_4g_ul_winner]</td></tr>
-  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_2/ookla_4g_lat_winner]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_2/ookla_4g_tsel_win]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_lat]</td></tr>
-  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_2/ookla_3g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_2/ookla_3g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_2/ookla_3g_latency]</td></tr>
-  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_2/ookla_3g_dl_winner]</td></tr>
-  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_2/ookla_3g_ul_winner]</td></tr>
-  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_2/ookla_3g_lat_winner]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_2/ookla_3g_tsel_win]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_lat]</td></tr>
-  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_2/Longitude_2]</td></tr>
-  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_2/Latitude_2]</td></tr>
-  <tr><td><b>Download</b></td><td>$[ST_Index_2/Download]</td></tr>
-  <tr><td><b>Upload</b></td><td>$[ST_Index_2/Upload]</td></tr>
-  <tr><td><b>Latency_2</b></td><td>$[ST_Index_2/Latency_2]</td></tr>
-  <tr><td><b>Operator</b></td><td>$[ST_Index_2/Operator]</td></tr>
-  <tr><td><b>Index_DL</b></td><td>$[ST_Index_2/Index_DL]</td></tr>
-  <tr><td><b>Index_UL</b></td><td>$[ST_Index_2/Index_UL]</td></tr>
-  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_2/Index_Lat]</td></tr>
-  <tr><td><b>__DL</b></td><td>$[ST_Index_2/__DL]</td></tr>
-  <tr><td><b>__UL</b></td><td>$[ST_Index_2/__UL]</td></tr>
-  <tr><td><b>__Lat</b></td><td>$[ST_Index_2/__Lat]</td></tr>
-  <tr><td><b>Index_Total</b></td><td>$[ST_Index_2/Index_Total]</td></tr>
-</table>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>4d000000</color>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d00aa00</color>
-		</PolyStyle>
-	</Style>
 	<Style id="falseColor1">
 		<BalloonStyle>
 			<text><![CDATA[<table border="0">
@@ -828,68 +460,7 @@
 			<color>4d000000</color>
 		</LineStyle>
 		<PolyStyle>
-			<color>4dff0000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="falseColor">
-		<BalloonStyle>
-			<text><![CDATA[<table border="0">
-  <tr><td><b>GridID</b></td><td>$[ST_Index_1/GridID]</td></tr>
-  <tr><td><b>GridSize</b></td><td>$[ST_Index_1/GridSize]</td></tr>
-  <tr><td><b>GridRefx</b></td><td>$[ST_Index_1/GridRefx]</td></tr>
-  <tr><td><b>GridRefy</b></td><td>$[ST_Index_1/GridRefy]</td></tr>
-  <tr><td><b>Longitude</b></td><td>$[ST_Index_1/Longitude]</td></tr>
-  <tr><td><b>Latitude</b></td><td>$[ST_Index_1/Latitude]</td></tr>
-  <tr><td><b>REGION</b></td><td>$[ST_Index_1/REGION]</td></tr>
-  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_1/KABUPATEN]</td></tr>
-  <tr><td><b>Downlink</b></td><td>$[ST_Index_1/Downlink]</td></tr>
-  <tr><td><b>Uplink</b></td><td>$[ST_Index_1/Uplink]</td></tr>
-  <tr><td><b>Latency</b></td><td>$[ST_Index_1/Latency]</td></tr>
-  <tr><td><b>POI_Check</b></td><td>$[ST_Index_1/POI_Check]</td></tr>
-  <tr><td><b>Num_POI</b></td><td>$[ST_Index_1/Num_POI]</td></tr>
-  <tr><td><b>POI_Name</b></td><td>$[ST_Index_1/POI_Name]</td></tr>
-  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_1/DTRoute_Check]</td></tr>
-  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_1/DTRoute_Name]</td></tr>
-  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_1/ookla_4g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_1/ookla_4g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_1/ookla_4g_latency]</td></tr>
-  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_1/ookla_4g_dl_winner]</td></tr>
-  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_1/ookla_4g_ul_winner]</td></tr>
-  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_1/ookla_4g_lat_winner]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_1/ookla_4g_tsel_win]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_1/ookla_4g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_1/ookla_4g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_1/ookla_4g_tsel_win_lat]</td></tr>
-  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_1/ookla_3g_dl_kbps]</td></tr>
-  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_1/ookla_3g_ul_kbps]</td></tr>
-  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_1/ookla_3g_latency]</td></tr>
-  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_1/ookla_3g_dl_winner]</td></tr>
-  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_1/ookla_3g_ul_winner]</td></tr>
-  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_1/ookla_3g_lat_winner]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_1/ookla_3g_tsel_win]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_1/ookla_3g_tsel_win_dl]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_1/ookla_3g_tsel_win_ul]</td></tr>
-  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_1/ookla_3g_tsel_win_lat]</td></tr>
-  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_1/Longitude_2]</td></tr>
-  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_1/Latitude_2]</td></tr>
-  <tr><td><b>Download</b></td><td>$[ST_Index_1/Download]</td></tr>
-  <tr><td><b>Upload</b></td><td>$[ST_Index_1/Upload]</td></tr>
-  <tr><td><b>Latency_2</b></td><td>$[ST_Index_1/Latency_2]</td></tr>
-  <tr><td><b>Operator</b></td><td>$[ST_Index_1/Operator]</td></tr>
-  <tr><td><b>Index_DL</b></td><td>$[ST_Index_1/Index_DL]</td></tr>
-  <tr><td><b>Index_UL</b></td><td>$[ST_Index_1/Index_UL]</td></tr>
-  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_1/Index_Lat]</td></tr>
-  <tr><td><b>__DL</b></td><td>$[ST_Index_1/__DL]</td></tr>
-  <tr><td><b>__UL</b></td><td>$[ST_Index_1/__UL]</td></tr>
-  <tr><td><b>__Lat</b></td><td>$[ST_Index_1/__Lat]</td></tr>
-  <tr><td><b>Index_Total</b></td><td>$[ST_Index_1/Index_Total]</td></tr>
-</table>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>4d000000</color>
-		</LineStyle>
-		<PolyStyle>
-			<color>4dff0000</color>
+			<color>4d0000ff</color>
 		</PolyStyle>
 	</Style>
 	<Style id="falseColor00">
@@ -950,7 +521,436 @@
 			<color>4d000000</color>
 		</LineStyle>
 		<PolyStyle>
+			<color>4d00aa00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="falseColor100">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>GridID</b></td><td>$[ST_Index_4/GridID]</td></tr>
+  <tr><td><b>GridSize</b></td><td>$[ST_Index_4/GridSize]</td></tr>
+  <tr><td><b>GridRefx</b></td><td>$[ST_Index_4/GridRefx]</td></tr>
+  <tr><td><b>GridRefy</b></td><td>$[ST_Index_4/GridRefy]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[ST_Index_4/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[ST_Index_4/Latitude]</td></tr>
+  <tr><td><b>REGION</b></td><td>$[ST_Index_4/REGION]</td></tr>
+  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_4/KABUPATEN]</td></tr>
+  <tr><td><b>Downlink</b></td><td>$[ST_Index_4/Downlink]</td></tr>
+  <tr><td><b>Uplink</b></td><td>$[ST_Index_4/Uplink]</td></tr>
+  <tr><td><b>Latency</b></td><td>$[ST_Index_4/Latency]</td></tr>
+  <tr><td><b>POI_Check</b></td><td>$[ST_Index_4/POI_Check]</td></tr>
+  <tr><td><b>Num_POI</b></td><td>$[ST_Index_4/Num_POI]</td></tr>
+  <tr><td><b>POI_Name</b></td><td>$[ST_Index_4/POI_Name]</td></tr>
+  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_4/DTRoute_Check]</td></tr>
+  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_4/DTRoute_Name]</td></tr>
+  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_4/ookla_4g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_4/ookla_4g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_4/ookla_4g_latency]</td></tr>
+  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_4/ookla_4g_dl_winner]</td></tr>
+  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_4/ookla_4g_ul_winner]</td></tr>
+  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_4/ookla_4g_lat_winner]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_4/ookla_4g_tsel_win]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_lat]</td></tr>
+  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_4/ookla_3g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_4/ookla_3g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_4/ookla_3g_latency]</td></tr>
+  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_4/ookla_3g_dl_winner]</td></tr>
+  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_4/ookla_3g_ul_winner]</td></tr>
+  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_4/ookla_3g_lat_winner]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_4/ookla_3g_tsel_win]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_lat]</td></tr>
+  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_4/Longitude_2]</td></tr>
+  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_4/Latitude_2]</td></tr>
+  <tr><td><b>Download</b></td><td>$[ST_Index_4/Download]</td></tr>
+  <tr><td><b>Upload</b></td><td>$[ST_Index_4/Upload]</td></tr>
+  <tr><td><b>Latency_2</b></td><td>$[ST_Index_4/Latency_2]</td></tr>
+  <tr><td><b>Operator</b></td><td>$[ST_Index_4/Operator]</td></tr>
+  <tr><td><b>Index_DL</b></td><td>$[ST_Index_4/Index_DL]</td></tr>
+  <tr><td><b>Index_UL</b></td><td>$[ST_Index_4/Index_UL]</td></tr>
+  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_4/Index_Lat]</td></tr>
+  <tr><td><b>__DL</b></td><td>$[ST_Index_4/__DL]</td></tr>
+  <tr><td><b>__UL</b></td><td>$[ST_Index_4/__UL]</td></tr>
+  <tr><td><b>__Lat</b></td><td>$[ST_Index_4/__Lat]</td></tr>
+  <tr><td><b>Index_Total</b></td><td>$[ST_Index_4/Index_Total]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>4d000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d7f0000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-FFAA7F-1000-0-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFAA7F-1000-0-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFAA7F-1000-0-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor5">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>GridID</b></td><td>$[ST_Index_3/GridID]</td></tr>
+  <tr><td><b>GridSize</b></td><td>$[ST_Index_3/GridSize]</td></tr>
+  <tr><td><b>GridRefx</b></td><td>$[ST_Index_3/GridRefx]</td></tr>
+  <tr><td><b>GridRefy</b></td><td>$[ST_Index_3/GridRefy]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[ST_Index_3/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[ST_Index_3/Latitude]</td></tr>
+  <tr><td><b>REGION</b></td><td>$[ST_Index_3/REGION]</td></tr>
+  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_3/KABUPATEN]</td></tr>
+  <tr><td><b>Downlink</b></td><td>$[ST_Index_3/Downlink]</td></tr>
+  <tr><td><b>Uplink</b></td><td>$[ST_Index_3/Uplink]</td></tr>
+  <tr><td><b>Latency</b></td><td>$[ST_Index_3/Latency]</td></tr>
+  <tr><td><b>POI_Check</b></td><td>$[ST_Index_3/POI_Check]</td></tr>
+  <tr><td><b>Num_POI</b></td><td>$[ST_Index_3/Num_POI]</td></tr>
+  <tr><td><b>POI_Name</b></td><td>$[ST_Index_3/POI_Name]</td></tr>
+  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_3/DTRoute_Check]</td></tr>
+  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_3/DTRoute_Name]</td></tr>
+  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_3/ookla_4g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_3/ookla_4g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_3/ookla_4g_latency]</td></tr>
+  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_3/ookla_4g_dl_winner]</td></tr>
+  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_3/ookla_4g_ul_winner]</td></tr>
+  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_3/ookla_4g_lat_winner]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_3/ookla_4g_tsel_win]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_3/ookla_4g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_3/ookla_4g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_3/ookla_4g_tsel_win_lat]</td></tr>
+  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_3/ookla_3g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_3/ookla_3g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_3/ookla_3g_latency]</td></tr>
+  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_3/ookla_3g_dl_winner]</td></tr>
+  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_3/ookla_3g_ul_winner]</td></tr>
+  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_3/ookla_3g_lat_winner]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_3/ookla_3g_tsel_win]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_3/ookla_3g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_3/ookla_3g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_3/ookla_3g_tsel_win_lat]</td></tr>
+  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_3/Longitude_2]</td></tr>
+  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_3/Latitude_2]</td></tr>
+  <tr><td><b>Download</b></td><td>$[ST_Index_3/Download]</td></tr>
+  <tr><td><b>Upload</b></td><td>$[ST_Index_3/Upload]</td></tr>
+  <tr><td><b>Latency_2</b></td><td>$[ST_Index_3/Latency_2]</td></tr>
+  <tr><td><b>Operator</b></td><td>$[ST_Index_3/Operator]</td></tr>
+  <tr><td><b>Index_DL</b></td><td>$[ST_Index_3/Index_DL]</td></tr>
+  <tr><td><b>Index_UL</b></td><td>$[ST_Index_3/Index_UL]</td></tr>
+  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_3/Index_Lat]</td></tr>
+  <tr><td><b>__DL</b></td><td>$[ST_Index_3/__DL]</td></tr>
+  <tr><td><b>__UL</b></td><td>$[ST_Index_3/__UL]</td></tr>
+  <tr><td><b>__Lat</b></td><td>$[ST_Index_3/__Lat]</td></tr>
+  <tr><td><b>Index_Total</b></td><td>$[ST_Index_3/Index_Total]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>4d000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d00aa00</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="falseColor8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor100</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="falseColor3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFAA7F-1000-0-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7faaff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>007faaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="falseColor">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>GridID</b></td><td>$[ST_Index_1/GridID]</td></tr>
+  <tr><td><b>GridSize</b></td><td>$[ST_Index_1/GridSize]</td></tr>
+  <tr><td><b>GridRefx</b></td><td>$[ST_Index_1/GridRefx]</td></tr>
+  <tr><td><b>GridRefy</b></td><td>$[ST_Index_1/GridRefy]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[ST_Index_1/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[ST_Index_1/Latitude]</td></tr>
+  <tr><td><b>REGION</b></td><td>$[ST_Index_1/REGION]</td></tr>
+  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_1/KABUPATEN]</td></tr>
+  <tr><td><b>Downlink</b></td><td>$[ST_Index_1/Downlink]</td></tr>
+  <tr><td><b>Uplink</b></td><td>$[ST_Index_1/Uplink]</td></tr>
+  <tr><td><b>Latency</b></td><td>$[ST_Index_1/Latency]</td></tr>
+  <tr><td><b>POI_Check</b></td><td>$[ST_Index_1/POI_Check]</td></tr>
+  <tr><td><b>Num_POI</b></td><td>$[ST_Index_1/Num_POI]</td></tr>
+  <tr><td><b>POI_Name</b></td><td>$[ST_Index_1/POI_Name]</td></tr>
+  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_1/DTRoute_Check]</td></tr>
+  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_1/DTRoute_Name]</td></tr>
+  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_1/ookla_4g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_1/ookla_4g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_1/ookla_4g_latency]</td></tr>
+  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_1/ookla_4g_dl_winner]</td></tr>
+  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_1/ookla_4g_ul_winner]</td></tr>
+  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_1/ookla_4g_lat_winner]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_1/ookla_4g_tsel_win]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_1/ookla_4g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_1/ookla_4g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_1/ookla_4g_tsel_win_lat]</td></tr>
+  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_1/ookla_3g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_1/ookla_3g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_1/ookla_3g_latency]</td></tr>
+  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_1/ookla_3g_dl_winner]</td></tr>
+  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_1/ookla_3g_ul_winner]</td></tr>
+  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_1/ookla_3g_lat_winner]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_1/ookla_3g_tsel_win]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_1/ookla_3g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_1/ookla_3g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_1/ookla_3g_tsel_win_lat]</td></tr>
+  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_1/Longitude_2]</td></tr>
+  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_1/Latitude_2]</td></tr>
+  <tr><td><b>Download</b></td><td>$[ST_Index_1/Download]</td></tr>
+  <tr><td><b>Upload</b></td><td>$[ST_Index_1/Upload]</td></tr>
+  <tr><td><b>Latency_2</b></td><td>$[ST_Index_1/Latency_2]</td></tr>
+  <tr><td><b>Operator</b></td><td>$[ST_Index_1/Operator]</td></tr>
+  <tr><td><b>Index_DL</b></td><td>$[ST_Index_1/Index_DL]</td></tr>
+  <tr><td><b>Index_UL</b></td><td>$[ST_Index_1/Index_UL]</td></tr>
+  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_1/Index_Lat]</td></tr>
+  <tr><td><b>__DL</b></td><td>$[ST_Index_1/__DL]</td></tr>
+  <tr><td><b>__UL</b></td><td>$[ST_Index_1/__UL]</td></tr>
+  <tr><td><b>__Lat</b></td><td>$[ST_Index_1/__Lat]</td></tr>
+  <tr><td><b>Index_Total</b></td><td>$[ST_Index_1/Index_Total]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>4d000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFAA7F-1000-0-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff7faaff</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>007faaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="falseColor4">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>GridID</b></td><td>$[ST_Index_2/GridID]</td></tr>
+  <tr><td><b>GridSize</b></td><td>$[ST_Index_2/GridSize]</td></tr>
+  <tr><td><b>GridRefx</b></td><td>$[ST_Index_2/GridRefx]</td></tr>
+  <tr><td><b>GridRefy</b></td><td>$[ST_Index_2/GridRefy]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[ST_Index_2/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[ST_Index_2/Latitude]</td></tr>
+  <tr><td><b>REGION</b></td><td>$[ST_Index_2/REGION]</td></tr>
+  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_2/KABUPATEN]</td></tr>
+  <tr><td><b>Downlink</b></td><td>$[ST_Index_2/Downlink]</td></tr>
+  <tr><td><b>Uplink</b></td><td>$[ST_Index_2/Uplink]</td></tr>
+  <tr><td><b>Latency</b></td><td>$[ST_Index_2/Latency]</td></tr>
+  <tr><td><b>POI_Check</b></td><td>$[ST_Index_2/POI_Check]</td></tr>
+  <tr><td><b>Num_POI</b></td><td>$[ST_Index_2/Num_POI]</td></tr>
+  <tr><td><b>POI_Name</b></td><td>$[ST_Index_2/POI_Name]</td></tr>
+  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_2/DTRoute_Check]</td></tr>
+  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_2/DTRoute_Name]</td></tr>
+  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_2/ookla_4g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_2/ookla_4g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_2/ookla_4g_latency]</td></tr>
+  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_2/ookla_4g_dl_winner]</td></tr>
+  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_2/ookla_4g_ul_winner]</td></tr>
+  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_2/ookla_4g_lat_winner]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_2/ookla_4g_tsel_win]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_lat]</td></tr>
+  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_2/ookla_3g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_2/ookla_3g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_2/ookla_3g_latency]</td></tr>
+  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_2/ookla_3g_dl_winner]</td></tr>
+  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_2/ookla_3g_ul_winner]</td></tr>
+  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_2/ookla_3g_lat_winner]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_2/ookla_3g_tsel_win]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_lat]</td></tr>
+  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_2/Longitude_2]</td></tr>
+  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_2/Latitude_2]</td></tr>
+  <tr><td><b>Download</b></td><td>$[ST_Index_2/Download]</td></tr>
+  <tr><td><b>Upload</b></td><td>$[ST_Index_2/Upload]</td></tr>
+  <tr><td><b>Latency_2</b></td><td>$[ST_Index_2/Latency_2]</td></tr>
+  <tr><td><b>Operator</b></td><td>$[ST_Index_2/Operator]</td></tr>
+  <tr><td><b>Index_DL</b></td><td>$[ST_Index_2/Index_DL]</td></tr>
+  <tr><td><b>Index_UL</b></td><td>$[ST_Index_2/Index_UL]</td></tr>
+  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_2/Index_Lat]</td></tr>
+  <tr><td><b>__DL</b></td><td>$[ST_Index_2/__DL]</td></tr>
+  <tr><td><b>__UL</b></td><td>$[ST_Index_2/__UL]</td></tr>
+  <tr><td><b>__Lat</b></td><td>$[ST_Index_2/__Lat]</td></tr>
+  <tr><td><b>Index_Total</b></td><td>$[ST_Index_2/Index_Total]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>4d000000</color>
+		</LineStyle>
+		<PolyStyle>
 			<color>4d00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="falseColor2">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>GridID</b></td><td>$[ST_Index_2/GridID]</td></tr>
+  <tr><td><b>GridSize</b></td><td>$[ST_Index_2/GridSize]</td></tr>
+  <tr><td><b>GridRefx</b></td><td>$[ST_Index_2/GridRefx]</td></tr>
+  <tr><td><b>GridRefy</b></td><td>$[ST_Index_2/GridRefy]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[ST_Index_2/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[ST_Index_2/Latitude]</td></tr>
+  <tr><td><b>REGION</b></td><td>$[ST_Index_2/REGION]</td></tr>
+  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_2/KABUPATEN]</td></tr>
+  <tr><td><b>Downlink</b></td><td>$[ST_Index_2/Downlink]</td></tr>
+  <tr><td><b>Uplink</b></td><td>$[ST_Index_2/Uplink]</td></tr>
+  <tr><td><b>Latency</b></td><td>$[ST_Index_2/Latency]</td></tr>
+  <tr><td><b>POI_Check</b></td><td>$[ST_Index_2/POI_Check]</td></tr>
+  <tr><td><b>Num_POI</b></td><td>$[ST_Index_2/Num_POI]</td></tr>
+  <tr><td><b>POI_Name</b></td><td>$[ST_Index_2/POI_Name]</td></tr>
+  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_2/DTRoute_Check]</td></tr>
+  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_2/DTRoute_Name]</td></tr>
+  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_2/ookla_4g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_2/ookla_4g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_2/ookla_4g_latency]</td></tr>
+  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_2/ookla_4g_dl_winner]</td></tr>
+  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_2/ookla_4g_ul_winner]</td></tr>
+  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_2/ookla_4g_lat_winner]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_2/ookla_4g_tsel_win]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_2/ookla_4g_tsel_win_lat]</td></tr>
+  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_2/ookla_3g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_2/ookla_3g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_2/ookla_3g_latency]</td></tr>
+  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_2/ookla_3g_dl_winner]</td></tr>
+  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_2/ookla_3g_ul_winner]</td></tr>
+  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_2/ookla_3g_lat_winner]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_2/ookla_3g_tsel_win]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_2/ookla_3g_tsel_win_lat]</td></tr>
+  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_2/Longitude_2]</td></tr>
+  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_2/Latitude_2]</td></tr>
+  <tr><td><b>Download</b></td><td>$[ST_Index_2/Download]</td></tr>
+  <tr><td><b>Upload</b></td><td>$[ST_Index_2/Upload]</td></tr>
+  <tr><td><b>Latency_2</b></td><td>$[ST_Index_2/Latency_2]</td></tr>
+  <tr><td><b>Operator</b></td><td>$[ST_Index_2/Operator]</td></tr>
+  <tr><td><b>Index_DL</b></td><td>$[ST_Index_2/Index_DL]</td></tr>
+  <tr><td><b>Index_UL</b></td><td>$[ST_Index_2/Index_UL]</td></tr>
+  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_2/Index_Lat]</td></tr>
+  <tr><td><b>__DL</b></td><td>$[ST_Index_2/__DL]</td></tr>
+  <tr><td><b>__UL</b></td><td>$[ST_Index_2/__UL]</td></tr>
+  <tr><td><b>__Lat</b></td><td>$[ST_Index_2/__Lat]</td></tr>
+  <tr><td><b>Index_Total</b></td><td>$[ST_Index_2/Index_Total]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>4d000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="falseColor0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor9">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>GridID</b></td><td>$[ST_Index_4/GridID]</td></tr>
+  <tr><td><b>GridSize</b></td><td>$[ST_Index_4/GridSize]</td></tr>
+  <tr><td><b>GridRefx</b></td><td>$[ST_Index_4/GridRefx]</td></tr>
+  <tr><td><b>GridRefy</b></td><td>$[ST_Index_4/GridRefy]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[ST_Index_4/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[ST_Index_4/Latitude]</td></tr>
+  <tr><td><b>REGION</b></td><td>$[ST_Index_4/REGION]</td></tr>
+  <tr><td><b>KABUPATEN</b></td><td>$[ST_Index_4/KABUPATEN]</td></tr>
+  <tr><td><b>Downlink</b></td><td>$[ST_Index_4/Downlink]</td></tr>
+  <tr><td><b>Uplink</b></td><td>$[ST_Index_4/Uplink]</td></tr>
+  <tr><td><b>Latency</b></td><td>$[ST_Index_4/Latency]</td></tr>
+  <tr><td><b>POI_Check</b></td><td>$[ST_Index_4/POI_Check]</td></tr>
+  <tr><td><b>Num_POI</b></td><td>$[ST_Index_4/Num_POI]</td></tr>
+  <tr><td><b>POI_Name</b></td><td>$[ST_Index_4/POI_Name]</td></tr>
+  <tr><td><b>DTRoute_Check</b></td><td>$[ST_Index_4/DTRoute_Check]</td></tr>
+  <tr><td><b>DTRoute_Name</b></td><td>$[ST_Index_4/DTRoute_Name]</td></tr>
+  <tr><td><b>ookla_4g_dl_kbps</b></td><td>$[ST_Index_4/ookla_4g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_4g_ul_kbps</b></td><td>$[ST_Index_4/ookla_4g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_4g_latency</b></td><td>$[ST_Index_4/ookla_4g_latency]</td></tr>
+  <tr><td><b>ookla_4g_dl_winner</b></td><td>$[ST_Index_4/ookla_4g_dl_winner]</td></tr>
+  <tr><td><b>ookla_4g_ul_winner</b></td><td>$[ST_Index_4/ookla_4g_ul_winner]</td></tr>
+  <tr><td><b>ookla_4g_lat_winner</b></td><td>$[ST_Index_4/ookla_4g_lat_winner]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win</b></td><td>$[ST_Index_4/ookla_4g_tsel_win]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_dl</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_ul</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_4g_tsel_win_lat</b></td><td>$[ST_Index_4/ookla_4g_tsel_win_lat]</td></tr>
+  <tr><td><b>ookla_3g_dl_kbps</b></td><td>$[ST_Index_4/ookla_3g_dl_kbps]</td></tr>
+  <tr><td><b>ookla_3g_ul_kbps</b></td><td>$[ST_Index_4/ookla_3g_ul_kbps]</td></tr>
+  <tr><td><b>ookla_3g_latency</b></td><td>$[ST_Index_4/ookla_3g_latency]</td></tr>
+  <tr><td><b>ookla_3g_dl_winner</b></td><td>$[ST_Index_4/ookla_3g_dl_winner]</td></tr>
+  <tr><td><b>ookla_3g_ul_winner</b></td><td>$[ST_Index_4/ookla_3g_ul_winner]</td></tr>
+  <tr><td><b>ookla_3g_lat_winner</b></td><td>$[ST_Index_4/ookla_3g_lat_winner]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win</b></td><td>$[ST_Index_4/ookla_3g_tsel_win]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_dl</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_dl]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_ul</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_ul]</td></tr>
+  <tr><td><b>ookla_3g_tsel_win_lat</b></td><td>$[ST_Index_4/ookla_3g_tsel_win_lat]</td></tr>
+  <tr><td><b>Longitude_2</b></td><td>$[ST_Index_4/Longitude_2]</td></tr>
+  <tr><td><b>Latitude_2</b></td><td>$[ST_Index_4/Latitude_2]</td></tr>
+  <tr><td><b>Download</b></td><td>$[ST_Index_4/Download]</td></tr>
+  <tr><td><b>Upload</b></td><td>$[ST_Index_4/Upload]</td></tr>
+  <tr><td><b>Latency_2</b></td><td>$[ST_Index_4/Latency_2]</td></tr>
+  <tr><td><b>Operator</b></td><td>$[ST_Index_4/Operator]</td></tr>
+  <tr><td><b>Index_DL</b></td><td>$[ST_Index_4/Index_DL]</td></tr>
+  <tr><td><b>Index_UL</b></td><td>$[ST_Index_4/Index_UL]</td></tr>
+  <tr><td><b>Index_Lat</b></td><td>$[ST_Index_4/Index_Lat]</td></tr>
+  <tr><td><b>__DL</b></td><td>$[ST_Index_4/__DL]</td></tr>
+  <tr><td><b>__UL</b></td><td>$[ST_Index_4/__UL]</td></tr>
+  <tr><td><b>__Lat</b></td><td>$[ST_Index_4/__Lat]</td></tr>
+  <tr><td><b>Index_Total</b></td><td>$[ST_Index_4/Index_Total]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>4d000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d7f0000</color>
 		</PolyStyle>
 	</Style>
 	<StyleMap id="falseColor10">
