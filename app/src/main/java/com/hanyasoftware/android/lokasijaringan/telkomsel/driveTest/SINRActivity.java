@@ -1,8 +1,13 @@
 package com.hanyasoftware.android.lokasijaringan.telkomsel.driveTest;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.app.ActivityCompat;
@@ -51,6 +56,9 @@ public class SINRActivity extends AppCompatActivity implements OnMapReadyCallbac
     TextView tvLongitude;
 
     BottomSheetBehavior sheetBehavior;
+
+    private double latitude;
+    private double longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,22 +124,55 @@ public class SINRActivity extends AppCompatActivity implements OnMapReadyCallbac
             e.printStackTrace();
         }
 
-        // Add a marker in Sydney and move the camera
+        // move the camera
         LatLng malang = new LatLng(-7.953564, 112.610301);
-//        mMap.addMarker(new MarkerOptions().position(malang).title("Marker in Malang"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(malang, 10.0f));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
+            ActivityCompat.requestPermissions(SINRActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
+        } else {
+            mMap.setMyLocationEnabled(true);
+
+            LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+            Location myLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+            if (myLocation == null) {
+                boolean isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+                if (isNetworkEnabled) {
+                    Criteria criteria = new Criteria();
+                    criteria.setAccuracy(Criteria.ACCURACY_COARSE);
+                    locationManager.requestSingleUpdate(criteria, new LocationListener() {
+                        @Override
+                        public void onLocationChanged(Location location) {
+                            latitude = location.getLatitude();
+                            longitude = location.getLongitude();
+                            tvLatitude.setText(String.valueOf(latitude));
+                            tvLongitude.setText(String.valueOf(longitude));
+                        }
+
+                        @Override
+                        public void onStatusChanged(String s, int i, Bundle bundle) {
+
+                        }
+
+                        @Override
+                        public void onProviderEnabled(String s) {
+
+                        }
+
+                        @Override
+                        public void onProviderDisabled(String s) {
+
+                        }
+                    }, null);
+                }
+            } else {
+                latitude = myLocation.getLatitude();
+                longitude = myLocation.getLongitude();
+                tvLatitude.setText(String.valueOf(latitude));
+                tvLongitude.setText(String.valueOf(longitude));
+            }
         }
-        mMap.setMyLocationEnabled(true);
     }
 
     @Override
