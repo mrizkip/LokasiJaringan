@@ -4,19 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    tools:context=".TelkomselActivity">
 
     <include
-        android:id="@+id/toolbar"
+        android:id="@+id/telkomsel_toolbar"
         layout="@layout/view_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
 
+    <TextView
+        android:id="@+id/telkomsel_tvTahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Data Tahun 2018"
+        android:textColor="@color/primaryText"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/telkomsel_toolbar" />
+
     <android.support.v7.widget.CardView
-        android:id="@+id/main_cardDataTelkomsel"
+        android:id="@+id/telkomsel_cardDriveTest"
         android:layout_width="368dp"
         android:layout_height="100dp"
         android:layout_marginEnd="16dp"
@@ -26,7 +39,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/telkomsel_tvTahun"
         >
 
         <android.support.constraint.ConstraintLayout
@@ -34,7 +47,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/main_tvDataTelkomsel"
+                android:id="@+id/telkomsel_tvDriveTest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -43,7 +56,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Hasil Perfomansi BBC Malang"
+                android:text="DRIVE TEST"
                 android:textColor="@color/primaryText"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -55,7 +68,7 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:id="@+id/main_cardDataJamTertentu"
+        android:id="@+id/telkomsel_cardSpeedTest"
         android:layout_width="368dp"
         android:layout_height="100dp"
         android:layout_marginEnd="16dp"
@@ -65,7 +78,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_cardDataTelkomsel"
+        app:layout_constraintTop_toBottomOf="@id/telkomsel_cardDriveTest"
         >
 
         <android.support.constraint.ConstraintLayout
@@ -73,7 +86,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/main_tvDataJamTertentu"
+                android:id="@+id/telkomsel_tvSpeedTest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -82,10 +95,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Hasil Perfomansi BBC Malang\nPada Jam Tertentu"
-                android:paddingLeft="24dp"
-                android:paddingRight="24dp"
-                android:gravity="center"
+                android:text="SPEED TEST"
                 android:textColor="@color/primaryText"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -96,5 +106,43 @@
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/telkomsel_cardUtility"
+        android:layout_width="368dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/telkomsel_cardSpeedTest"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/telkomsel_tvUtility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="UTILITY"
+                android:textColor="@color/primaryText"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
 
 </android.support.constraint.ConstraintLayout>

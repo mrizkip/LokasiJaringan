@@ -1,4 +1,4 @@
-package com.hanyasoftware.android.lokasijaringan.driveTest;
+package com.hanyasoftware.android.lokasijaringan;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBar;
@@ -8,43 +8,45 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.hanyasoftware.android.lokasijaringan.R;
+import com.hanyasoftware.android.lokasijaringan.jamTertentu.driveTest.DriveTestSendiriActivity;
+import com.hanyasoftware.android.lokasijaringan.jamTertentu.speedTest.SpeedTestSendiriActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class DriveTestActivity extends AppCompatActivity {
+public class JamTertentuActivity extends AppCompatActivity {
 
-    @BindView(R.id.driveTest_toolbar)
+    @BindView(R.id.jamTertentu_toolbar)
     Toolbar toolbar;
-    @BindView(R.id.driveTest_cardRSRP)
-    CardView cardRsrp;
-    @BindView(R.id.driveTest_cardSINR)
-    CardView cardSinr;
-
+    @BindView(R.id.jamTertentu_cardDriveTest)
+    CardView cardDriveTest;
+    @BindView(R.id.jamTertentu_cardSpeedTest)
+    CardView cardSpeedTest;
     ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drive_test);
+        setContentView(R.layout.activity_jam_tertentu);
 
         ButterKnife.bind(this);
 
         if (toolbar != null) setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             actionBar = getSupportActionBar();
-            actionBar.setTitle("Drive Test");
+            actionBar.setTitle("Data Sendiri");
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-        cardRsrp.setOnClickListener(v -> {
-            Intent intent = new Intent(DriveTestActivity.this, RSRPActivity.class);
+        cardDriveTest.setOnClickListener(view -> {
+            Intent intent = new Intent(JamTertentuActivity.this, DriveTestSendiriActivity.class);
             startActivity(intent);
         });
 
-
-
+        cardSpeedTest.setOnClickListener(view -> {
+            Intent intent = new Intent(JamTertentuActivity.this, SpeedTestSendiriActivity.class);
+            startActivity(intent);
+        });
     }
 
     @Override

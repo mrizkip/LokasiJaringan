@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".telkomsel.utility.UtilityActivity">
+    tools:context=".jamTertentu.speedTest.SpeedTestSendiriActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -13,17 +13,17 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <include
-            android:id="@+id/utility_toolbar"
+            android:id="@+id/speedTestSendiri_toolbar"
             layout="@layout/view_toolbar" />
     </android.support.design.widget.AppBarLayout>
 
     <fragment
-        android:id="@+id/mapUtility"
+        android:id="@+id/mapSpeedTestSendiri"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/utility_toolbar" />
+        android:layout_below="@id/speedTestSendiri_toolbar" />
 
-    <include layout="@layout/bottomsheet_utility" />
+    <include layout="@layout/bottomsheet_speed_test" />
 
 </android.support.design.widget.CoordinatorLayout>

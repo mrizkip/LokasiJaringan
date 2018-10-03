@@ -7,18 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
-import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.hanyasoftware.android.lokasijaringan.driveTest.DriveTestActivity;
-import com.hanyasoftware.android.lokasijaringan.speedTest.SpeedTestActivity;
-import com.hanyasoftware.android.lokasijaringan.utility.UtilityActivity;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -29,12 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @BindView(R.id.main_cardDriveTest)
-    CardView cardDriveTest;
-    @BindView(R.id.main_cardSpeedTest)
-    CardView cardSpeedTest;
-    @BindView(R.id.main_cardUtility)
-    CardView cardUtility;
+    @BindView(R.id.main_cardDataTelkomsel)
+    CardView cardTelkomsel;
+    @BindView(R.id.main_cardDataJamTertentu)
+    CardView cardJamTertentu;
     ActionBar actionBar;
 
     boolean permissionGranted = false;
@@ -73,18 +66,13 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }).check();
 
-        cardDriveTest.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, DriveTestActivity.class);
+        cardTelkomsel.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, TelkomselActivity.class);
             startActivity(intent);
         });
 
-        cardSpeedTest.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, SpeedTestActivity.class);
-            startActivity(intent);
-        });
-
-        cardUtility.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, UtilityActivity.class);
+        cardJamTertentu.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, JamTertentuActivity.class);
             startActivity(intent);
         });
 
